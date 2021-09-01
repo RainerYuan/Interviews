@@ -9,7 +9,7 @@ class Solution {
         }
 
         if(nums[s]<nums[e]){
-            reutnr nums[s];
+            return nums[s];
         }
         int mid = (s+e)/2;
         int leftmin = helper(nums,s,mid);
