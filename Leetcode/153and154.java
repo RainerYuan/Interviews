@@ -7,6 +7,10 @@ class Solution {
             int min = (nums[s]>nums[e])? nums[e]:nums[s];
             return min;
         }
+
+        if(nums[s]<nums[e]){
+            reutnr nums[s];
+        }
         int mid = (s+e)/2;
         int leftmin = helper(nums,s,mid);
         int rightmin = helper(nums,mid+1,e);
